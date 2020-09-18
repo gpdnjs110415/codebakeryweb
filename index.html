@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코드베이커리</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="loading">
+    </div>
+    <nav>
+        <div class="nav-container">
+            <img id="logo" src="./image/logo-white.png" alt="">
+            <div class="nav-text">
+                <a href="#" id="introduce"><span>소개</span></a>
+                <a href="#" id="activity"><span>활동</span></a>
+                <a href="#" id="member"><span>동아리원</span></a>
+                <a href="#" id="contact"><span>CONTACT US</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="main-img">
+            <img src="./image/chefhat.png" alt="">
+            <img src="./image/coven.png" alt="">
+            <img src="./image/arduino.png" alt="">
+        </div>
+        <div class="main-text">
+            <span id="smalltext">&nbsp가르침을 코딩하다!</span>
+            <span id="bigtext">코드베이커리</span>
+        </div>
+        <img id="triangle" src="./image/triangle.png" alt="">
+    </div>
+
+    <div class="number-info">
+        <div class="number-info-text">
+            <span class="title">2015년</span>
+            <span class="info">부터 활동해 온 장수 동아리</span>
+        </div>
+        <div class="number-info-text">
+            <span class="title">54명<br></span>
+            <span class="info">1년 동안 가르친 학생 수</span>
+            <span class="info" id="verysmalltext">(2019년 기준)</span>
+        </div>
+        <div class="number-info-text">
+            <span class="title">99%</span>
+            <span class="info">수강 학생들의 만족도</span>
+        </div>
+    </div>
+
+    <div class="codebakery-info">
+        <img src="/image/codebakeryinfoimg.png" alt="">
+
+        <div class="codebakery-info-container">
+            <div class="activity-title">
+                <p class="activity-titleText">코드베이커리는</p>
+            </div>
+        </div>
+        <div class="codebakery-info-text-container">
+            <p class="codebakery-info-text">&nbsp&nbsp&nbsp코드베이커리는 한국디지털미디어고등학교 교내 유일 코딩 교육 동아리입니다.
+                자체 제작한 커리큘럼을 가지고<br> 청소년수련관과 협력하여 무료로 코딩교육을 해주고 있습니다. 뿐만 아니라 아두이노 교육 키트도 제작하여 판매합니다.</p>
+        </div>
+
+    </div>
+
+    <div class="activity">
+
+        <div class="activity-container">
+            <div class="activity-title banner">
+                <p class="activity-titleText banner">그동안의 활동</p>
+            </div>
+            <div class="activity-article">
+                <div class="activity-articleContainer">
+                    <div class="activity-articleImgContainer">
+
+                    </div>
+                    <div class="activity-articleText">
+                        <span>#고양 #청소년수련관</span>
+                        <span>#아두이노로 피아노 만들기</span>
+                    </div>
+
+                </div>
+                <div class="activity-articleContainer">
+                    <div class="activity-articleImgContainer">
+
+                    </div>
+                    <div class="activity-articleText">
+                        <span>#고양 #청소년수련관</span>
+                        <span>#아두이노로 피아노 만들기</span>
+                    </div>
+                </div>
+                <div class="activity-articleContainer">
+                    <div class="activity-articleImgContainer">
+                    </div>
+                    <div class="activity-articleText">
+                        <span>#고양 #청소년수련관</span>
+                        <span>#아두이노로 피아노 만들기</span>
+                    </div>
+                </div>
+            </div>
+            <div class="activity-moreBtn">
+                <button>더 보러 가기</button>
+            </div>
+        </div>
+        <img src="./image/wondercoven.png" class="article-coven">
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="sns">
+                <a href=""><img src="./image/insta.png" alt=""></a>
+                <a href=""><img src="./image/facebook.png" alt=""></a>
+                <a href=""><img src="./image/youtube.png" alt=""></a>
+            </div>
+            <span>@18WP이혜원</span>
+            <span>황보률 짱짱걸</span>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.loading').fadeOut(3000);
+        });
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#introduce').click(function () {
+                var offset = $('.activity-title').offset(); //선택한 태그의 위치를 반환
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+                $('html').animate({ scrollTop: offset.top }, 600);
+            });
+        });
+    </script>
+
+
+
+    출처: https://appsnuri.tistory.com/411 [이야기앱 세상]
+</body>
+
+</html>
