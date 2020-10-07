@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'nanumsquareround';
+    font-size:1rem;
+}
+
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}    
+body    ::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+}    
+    
+body{
+        background-color:#2FA2A6;
+}    
+    
+a{
+        text-decoration: none;
+}    
+    
+#logo{
+    height:2rem;
+    padding: 2rem 2rem;
+    width: auto;
+}
+
+    
+    
+#smalltext{
+    font-family:'nanumsquareround';
+        font-size:1.5rem;
+}    
+    
+#bigtext{
+        font-family: 'Recipekorea';
+    font-size:8rem;
+}
+    
+.nav-container{
+        text-align: center;
+    width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    z-index: 10;
+    }
+    
+    
+.nav-text span{
+        font-size: 1.4rem;
+        margin: 0rem 2rem ;
+        color: white;
+        padding: 0.8rem 1.2rem;
+        
+    }
+
+
+    
+.nav-text span:hover{
+        color: #2FA2A6;
+        background-color:white;
+        border-radius:3rem;
+    
+    }
+
+.activity{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height: 470rem;
+    position:relative;
+}
+
+#activity-background{
+    width:100%;
+    position:absolute;
+    z-index: -20;
+}
+
+.activity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 700px;
+    justify-content: space-between;
+    z-index: 2;
+    
+}
+
+.activity-title{
+    margin-top: 4rem;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    background-image: url('../image/banner.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.activity-titleText{
+    padding: 2rem 0rem;
+    font-family: 'Recipekorea';
+    color: white;
+    font-size: 3.3rem;
+    display: block;
+}
+    
+.activity-article{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+}    
+    
+.activity-articleContainer{
+    margin: 0rem 1rem;
+    width: 30rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  6px 6px 12px #c2c2c2, 
+                -6px -6px 12px #ffffff;
+    border-radius: 2rem;
+}    
+    
+.activity-articleImgContainer{
+    background-image: url('../image/goyang.jpg');
+    width:25rem;
+    height:25rem;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    
+.activity-moreBtn{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}    
+    
+.activity-articleText{
+        display: flex;
+    flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+
+    .activity-articleText span{
+        font-family: '나눔스퀘어라운드 ExtraBold';
+        font-size: 1.25em;
+        text-align: left;
+        
+}    
+    
+    .activity-moreBtn button{
+    background-color : #2FA2A6;
+        margin-top: 4rem;
+        border-radius: 3rem;
+        padding: 2rem 8rem;
+        color: white;
+        border: none;
+        font-family: '나눔스퀘어라운드 Light';
+    font-size: 1.7rem;
+    }
+    
+.article-coven{
+        width: 20%;
+        position: absolute;
+        right: 2rem;
+        bottom: 3rem;
+        filter:drop-shadow(0px 3px 5px #00000079);
+}    
+.grade-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.grade-container div img {
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.356);
+    margin: 0rem 2rem;
+    height:18rem;
+    width: 18rem;
+    border-radius: 10%;
+    
+}
+
+.memberinfo {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.member-container{
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    flex-direction: column;
+}
+
+.hoverText{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+    width:13rem;
+    height: 13rem;
+    text-align: center;
+    line-height:1.2rem;
+    letter-spacing:0.1rem;
+    word-break: normal;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 2.5rem;
+    border-radius: 10%;
+}
+
+.hoverText:hover{
+    opacity: 1;
+    transition:0.5s;
+}
+
+.hoverText a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.hoverText a:hover{
+    color: rgb(0, 0, 0);
+    background-color:white;
+}
+
+.grade-container-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.title-container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+/* .img-container{
+    border: 1px solid aqua;
+} */
+.name-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.title-text{
+    color: white;
+    font-size: 3rem;
+    display: inline;
+    font-family: 'Recipekorea';
+}
+.name-container-info{
+    font-family: '나눔스퀘어라운드 Light';
+    font-size: 1.3rem;
+}
+.name-container-name{
+    font-family: '나눔스퀘어라운드 ExtraBold';
+    font-size:1.8rem;
+}
+.title-container img{
+    width: 3rem;
+    height: auto;
+} 
+.smalltitle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter:drop-shadow(0px 3px 5px #00000049);
+}
+.smalltitle-container img{
+    width:3rem;
+    margin-right:1rem;
+}
+
+.smalltitle-container h2{
+    padding-top: 0.9rem;
+}
+
+
+
+
+.footer{
+    position: relative;
+    text-align: center;
+    background-color:#2FA2A6;
+    padding: 8rem 0rem;
+    color: white;
+}
+.footer span{
+    display: block;
+    font-size: 1.2rem;
+}
+
+
+    
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+@font-face {
+        font-family: 'Recipekorea';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+                                            
