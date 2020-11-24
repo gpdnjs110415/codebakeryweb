@@ -240,34 +240,10 @@ a{
 }
 
 .activity-article{
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    
-}
-
-.activity-articleContainer{
-    margin: 0rem 1rem;
-    width: 30rem;
-    height: 32rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow:  6px 6px 12px #c2c2c2, 
-                -6px -6px 12px #ffffff;
-    border-radius: 2rem;
-    background-color:rgb(230, 230, 230);
-}
-
-.activity-articleImgContainer{
-    background-image: url('../image/goyang.jpg');
-    width:25rem;
-    height:25rem;
-    border-radius: 1rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     
 }
 
@@ -275,34 +251,33 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    cursor: pointer;
+    margin-top: 3rem;
 }
 
-.activity-articleText{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    margin-left: 5rem;
-    margin-top: 1rem;
+
+button:focus { 
+    outline: none; 
 }
 
-.activity-articleText span{
-    font-family: '나눔스퀘어라운드 ExtraBold';
-    font-size: 1.25em;
-    text-align: left;
-    
+.activity-articleContainer {
+    background-color: white;
+    width: 25rem;
+    height: 28rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 18px  #2929298a;
 }
 
-.activity-moreBtn button{
-    background-color : #2FA2A6;
-    margin-top: 4rem;
-    border-radius: 3rem;
-    padding: 2rem 8rem;
-    color: white;
-    border: none;
-    font-family: '나눔스퀘어라운드 Light';
-    font-size: 1.7rem;
+.activity-articleImg{
+    width : 90%;
+    height: 73%;
+    border-radius: 2rem;
+    padding: 1.3rem;
+    padding-bottom: 1rem;
 }
+
 
 .article-coven{
     width: 20%;
@@ -313,9 +288,60 @@ a{
     z-index: 10;
 }
 
+.activity-articleText{
+    padding-left: 1.3rem;
+}
 
+.activity-articleText span{
+    font-family: '나눔스퀘어라운드 ExtraBold';
+    font-size: 25px;
+    width: 90%;
+}
 
+.coolBeans {
+  border: 2px solid currentColor;
+  border-radius: 5rem;
+  color: #2FA2A6;
+  font-family: '나눔스퀘어';
+  font-size: 2rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 2rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  width:fit-content;
+  display: flex;
+  justify-content: center;
+}
 
+.coolBeans::after {
+  background-color:  #2FA2A6;
+  border-radius: 5rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  border: 2px solid transparent;
+  color: white;
+  transform: scale(1.05);
+  will-change: transform;
+}
 
 
 
